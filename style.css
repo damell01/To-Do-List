@@ -1,0 +1,128 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1 {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    margin: 0;
+  }
+  
+  #balance {
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #f1f1f1;
+    text-align: center;
+  }
+  
+  #stocks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .stock {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    width: 200px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .stock-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .stock-info .symbol {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .stock-info .price {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .stock-actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .stock-actions .quantity {
+    width: 60px;
+    padding: 5px;
+    margin-right: 10px;
+  }
+  
+  .stock-actions .buy,
+  .stock-actions .sell {
+    padding: 5px 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .stock-actions .buy:hover,
+  .stock-actions .sell:hover {
+    background-color: #444;
+  }
+  
+  /* Responsive Styles */
+  
+  @media (max-width: 768px) {
+    #stocks {
+      justify-content: center;
+    }
+    
+    .stock {
+      margin-right: 10px;
+    }
+    
+    .stock-carousel {
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      scroll-padding: 10px;
+      -webkit-overflow-scrolling: touch;
+    }
+    
+    .stock {
+      scroll-snap-align: start;
+    }
+  }
+  
+ 
+  
+.stock-carousel {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding: 20px;
+  }
+  
+  .stock {
+    flex: 0 0 200px;
+    margin-right: 20px;
+  }
+  
+  
+  
